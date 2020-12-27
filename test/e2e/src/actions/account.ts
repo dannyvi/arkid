@@ -1,3 +1,4 @@
+// @ts-ignore
 import {Page, launch} from 'puppeteer';
 
 export class accountAction{

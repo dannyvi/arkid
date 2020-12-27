@@ -106,7 +106,7 @@ class RedisWrapper(object):
             if self.compressor:
                 serialized_data = self.compressor.decompress(serialized_data)
             return self.serializer.loads(serialized_data)
-        except Exception, e:
+        except Exception as e:
             for candidate_serializer in self.fallback_serializers:
                 try:
                     return candidate_serializer.loads(serialized_data)

@@ -197,4 +197,5 @@ urlpatterns = [
         name='middleware_plugin_list'),
     url(r'^plugin/middleware/(?P<uuid>[\w]+)/$', advance_views.MiddlewarePluginDetailAPIView.as_view(),
         name='middleware_plugin_detail'),
+    url(r'', include('scim.urls'), name='scim'),
 ]

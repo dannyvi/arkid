@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'captcha',
     'djangosaml2idp',
     # 'ldap.sql_backend',
+    'django_extensions',
+    'scim',
 ]
 
 REST_FRAMEWORK = {
